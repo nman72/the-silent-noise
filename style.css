@@ -10,7 +10,7 @@
     :: 3.5.0 Preloader
     :: 3.6.0 Miscellaneous
     :: 3.7.0 ScrollUp
-    :: 3.8.0 Musica Button
+    :: 3.8.0 tsn Button
 :: 4.0 Header Area CSS
 :: 5.0 Hero Slides Area
 :: 6.0 About Us CSS
@@ -44,6 +44,7 @@
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/audioplayer.css);
+@import url(css/tsn-icon.mon.css);
 /* :: 3.0 Base CSS */
 * {
   margin: 0;
@@ -309,15 +310,15 @@ img {
   z-index: 1;
   width: 100%;
   height: 5px;
-  background: #cc1573;
-  background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-  background: linear-gradient(to right, #cc1573, #5722a9); }
+  background: #707070;
+  background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+  background: linear-gradient(to right, #707070, #0f0f0f); }
 
 /* :: 3.7.0 ScrollUp */
 #scrollUp {
-  background: #cc1573;
-  background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-  background: linear-gradient(to right, #cc1573, #5722a9);
+  background: #707070;
+  background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+  background: linear-gradient(to right, #707070, #0f0f0f);
   border-radius: 0;
   bottom: 50px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
@@ -331,11 +332,11 @@ img {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms; }
 
-/* :: 3.8.0 Musica Button */
-.musica-btn {
-  background: #cc1573;
-  background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-  background: linear-gradient(to right, #cc1573, #5722a9);
+/* :: 3.8.0 tsn Button */
+.tsn-btn {
+  background: #707070;
+  background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+  background: linear-gradient(to right, #707070, #0f0f0f);
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   position: relative;
@@ -351,38 +352,38 @@ img {
   line-height: 42px;
   font-weight: 700;
   text-transform: uppercase; }
-  .musica-btn:hover, .musica-btn:focus {
+  .tsn-btn:hover, .tsn-btn:focus {
     font-size: 12px;
     font-weight: 700;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
     color: #ffffff; }
-  .musica-btn.btn-2 {
+  .tsn-btn.btn-2 {
     background: #ffffff; }
-    .musica-btn.btn-2:hover, .musica-btn.btn-2:focus {
+    .tsn-btn.btn-2:hover, .tsn-btn.btn-2:focus {
       background: #707070;
       box-shadow: none;
       color: #ffffff; }
-  .musica-btn.btn-3 {
+  .tsn-btn.btn-3 {
     color: #707070;
     line-height: 42px;
     padding: 0 15px;
     width: 133px;
     height: 42px;
-    border-left: 3px solid #cc1573;
-    border-right: 3px solid #5722a9;
+    border-left: 3px solid #707070;
+    border-right: 3px solid #0f0f0f;
     background-position: 0 0, 0 100%;
     background-repeat: no-repeat;
     background-size: 100% 3px;
-    background-image: -webkit-linear-gradient(left, #cc1573 0%, #5722a9 100%), -webkit-linear-gradient(left, #cc1573 0%, #5722a9 100%);
-    background-image: linear-gradient(to right, #cc1573 0%, #5722a9 100%), linear-gradient(to right, #cc1573 0%, #5722a9 100%); }
-    .musica-btn.btn-3::after {
+    background-image: -webkit-linear-gradient(left, #707070 0%, #0f0f0f 100%), -webkit-linear-gradient(left, #707070 0%, #0f0f0f 100%);
+    background-image: linear-gradient(to right, #707070 0%, #0f0f0f 100%), linear-gradient(to right, #707070 0%, #0f0f0f 100%); }
+    .tsn-btn.btn-3::after {
       -webkit-transition-duration: 750ms;
       transition-duration: 750ms;
       color: #ffffff;
-      background: #cc1573;
-      background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-      background: -webkit-linear-gradient(left, #cc1573, #5722a9);
-      background: linear-gradient(to right, #cc1573, #5722a9);
+      background: #707070;
+      background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+      background: -webkit-linear-gradient(left, #707070, #0f0f0f);
+      background: linear-gradient(to right, #707070, #0f0f0f);
       content: '';
       position: absolute;
       width: 100%;
@@ -392,10 +393,10 @@ img {
       z-index: -1;
       opacity: 0;
       visibility: hidden; }
-    .musica-btn.btn-3:hover, .musica-btn.btn-3:focus {
+    .tsn-btn.btn-3:hover, .tsn-btn.btn-3:focus {
       box-shadow: none;
       color: #ffffff; }
-    .musica-btn.btn-3:hover::after, .musica-btn.btn-3:focus::after {
+    .tsn-btn.btn-3:hover::after, .tsn-btn.btn-3:focus::after {
       opacity: 1;
       visibility: visible; }
 
@@ -407,78 +408,86 @@ img {
   top: 30px;
   left: 0;
   z-index: 1000; }
-  .header-area .musica-main-menu {
+  .header-area .tsn-main-menu {
     position: relative;
     width: 100%;
     height: 85px;
     background-color: #ffffff;
     padding: 0 5%; }
     @media only screen and (max-width: 767px) {
-      .header-area .musica-main-menu {
+      .header-area .tsn-main-menu {
         height: 70px; } }
-    .header-area .musica-main-menu .classy-nav-container {
+    .header-area .tsn-main-menu .classy-nav-container {
       background-color: transparent; }
-    .header-area .musica-main-menu .classy-navbar {
+    .header-area .tsn-main-menu .classy-navbar {
       background-color: transparent;
       height: 85px;
       padding: 0; }
       @media only screen and (max-width: 767px) {
-        .header-area .musica-main-menu .classy-navbar {
+        .header-area .tsn-main-menu .classy-navbar {
           height: 70px; } }
-      .header-area .musica-main-menu .classy-navbar .classynav ul li a {
+      .header-area .tsn-main-menu .classy-navbar .classynav ul li a {
         position: right;
         font-weight: 600;
         text-transform: capitalize;
-        color: #262626;
+        color: #707070;
         font-size: 14px; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .header-area .musica-main-menu .classy-navbar .classynav ul li a {
+          .header-area .tsn-main-menu .classy-navbar .classynav ul li a {
             font-size: 14px;
             padding: 0 10px; } }
-        .header-area .musica-main-menu .classy-navbar .classynav ul li a:hover, .header-area .musica-main-menu .classy-navbar .classynav ul li a:focus {
+        .header-area .tsn-main-menu .classy-navbar .classynav ul li a:hover, .header-area .tsn-main-menu .classy-navbar .classynav ul li a:focus {
           color: #707070; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .header-area .musica-main-menu .classy-navbar .classynav ul li a {
+          .header-area .tsn-main-menu .classy-navbar .classynav ul li a {
             background-color: #ffffff; } }
         @media only screen and (max-width: 767px) {
-          .header-area .musica-main-menu .classy-navbar .classynav ul li a {
+          .header-area .tsn-main-menu .classy-navbar .classynav ul li a {
             background-color: #ffffff; } }
-      .header-area .musica-main-menu .classy-navbar .classynav ul li.megamenu-item > a::after,
-      .header-area .musica-main-menu .classy-navbar .classynav ul li.has-down > a::after {
+      .header-area .tsn-main-menu .classy-navbar .classynav ul li.megamenu-item > a::after,
+      .header-area .tsn-main-menu .classy-navbar .classynav ul li.has-down > a::after {
         color: #ffffff; }
-      .header-area .musica-main-menu .classy-navbar .classynav ul li ul li a {
+      .header-area .tsn-main-menu .classy-navbar .classynav ul li ul li a {
         color: #ffffff; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .header-area .musica-main-menu .classy-navbar .classynav ul li ul li a {
+          .header-area .tsn-main-menu .classy-navbar .classynav ul li ul li a {
             padding: 0 15px; } }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .header-area .musica-main-menu .classy-navbar .classynav ul li ul li a {
+          .header-area .tsn-main-menu .classy-navbar .classynav ul li ul li a {
             color: #ffffff; } }
         @media only screen and (max-width: 767px) {
-          .header-area .musica-main-menu .classy-navbar .classynav ul li ul li a {
+          .header-area .tsn-main-menu .classy-navbar .classynav ul li ul li a {
             color: #ffffff; } }
-    .header-area .musica-main-menu .top-social-info {
-      margin-left: 70px; }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .header-area .musica-main-menu .top-social-info {
-          margin-left: 40px; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .header-area .musica-main-menu .top-social-info {
-          margin-left: 0;
-          margin-top: 30px; } }
-      @media only screen and (max-width: 767px) {
-        .header-area .musica-main-menu .top-social-info {
-          margin-left: 0;
-          margin-top: 30px; } }
-      .header-area .musica-main-menu .top-social-info a {
-        display: inline-block;
-        color: #707070;
-        padding: 0 10px;
-        font-size: 14px; }
-        @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .header-area .musica-main-menu .top-social-info a {
-            padding: 0 5px; } }
-  .header-area .is-sticky .musica-main-menu {
+      .header-area .tsn-main-menu .classy-navbar .classynav .cart-btn {
+        position: relative;
+        z-index: 10; }
+        .header-area .tsn-main-menu .classy-navbar .classynav .cart-btn p {
+          -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+          margin-bottom: 0;
+          color: #707070;
+          font-size: 18px;
+          cursor: pointer;
+          line-height: 1; }
+          .header-area .tsn-main-menu .classy-navbar .classynav .cart-btn p:hover, .header-area .tsn-main-menu .classy-navbar .classynav .cart-btn p:focus {
+            color: rgba(100, 100, 100, 0.7); }
+          .header-area .tsn-main-menu .classy-navbar .classynav .cart-btn p .quantity {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #fff;
+            background-color: #707070;
+            color: #fff;
+            display: block;
+            position: absolute;
+            bottom: -5px;
+            left: 10px;
+            z-index: 10;
+            font-size: 9px;
+            font-weight: 400;
+            border-radius: 50%;
+            line-height: 13px;
+            text-align: center; }
+  .header-area .is-sticky .tsn-main-menu {
     position: fixed;
     width: 100%;
     height: 85px;
@@ -488,7 +497,7 @@ img {
     background-color: #ffffff;
     box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 767px) {
-      .header-area .is-sticky .musica-main-menu {
+      .header-area .is-sticky .tsn-main-menu {
         height: 70px; } }
 
 .classy-navbar .nav-brand {
@@ -607,25 +616,27 @@ img {
   .single-hero-slide .hero-slides-content {
     display: inline-block; }
     .single-hero-slide .hero-slides-content h2 {
-      position: relative;
+      position: absolute;
       z-index: 1;
-      font-size: 172px;
+      font-size: 30px;
       color: #ffffff;
+      margin-left: 45px;
+      margin-top: -350px;
       margin-bottom: 0;
       font-weight: 600;
       text-shadow: 18px 0 0 rgba(255, 45, 109, 0.2);
       display: inline-block; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-hero-slide .hero-slides-content h2 {
-          font-size: 130px; } }
+          font-size: 130px;} }
       @media only screen and (max-width: 767px) {
         .single-hero-slide .hero-slides-content h2 {
-          font-size: 60px; } }
+          font-size: 60px;} }
       .single-hero-slide .hero-slides-content h2 span {
         position: absolute;
         top: 0;
         left: -18px;
-        font-size: 172px;
+        font-size: 40px;
         color: rgba(132, 57, 255, 0.2);
         margin-bottom: 0;
         font-weight: 600;
@@ -636,17 +647,18 @@ img {
             font-size: 130px; } }
         @media only screen and (max-width: 767px) {
           .single-hero-slide .hero-slides-content h2 span {
-            font-size: 60px; } }
+            font-size: 60px;} }
     .single-hero-slide .hero-slides-content p {
-      text-align: right;
-      font-size: 60px;
-      margin-top: -70px;
+      text-align: left;
+      font-size: 12px;
+      margin-left: 45px;
+      margin-top: -300px;
       color: #ffffff;
-      font-family: "Allura", cursive; }
+      font-family: "Roboto", sans-serif; }
       @media only screen and (max-width: 767px) {
         .single-hero-slide .hero-slides-content p {
           font-size: 30px;
-          margin-top: -20px; } }
+          margin-top: 10px;} }
 
 .hero-slides .owl-item.active .single-hero-slide .slide-img {
   -webkit-animation: slide 15s linear infinite;
@@ -798,13 +810,13 @@ img {
         margin-bottom: 30px; } }
     .single-upcoming-shows .shows-date h2 {
       font-size: 48px;
-      color: #ffffff;
+      color: #707070;
       text-align: center;
       margin-bottom: 0;
       line-height: 1; }
       .single-upcoming-shows .shows-date h2 span {
         font-size: 16px;
-        color: #ffffff;
+        color: #707070;
         font-weight: 500;
         display: block;
         line-height: 1.3; }
@@ -841,7 +853,7 @@ img {
           width: 60px; } }
     .single-upcoming-shows .shows-desc .shows-name h6 {
       font-weight: 900;
-      color: #ffffff;
+      color: #707070;
       text-transform: uppercase;
       margin-bottom: 0; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -849,7 +861,7 @@ img {
           font-size: 13px; } }
     .single-upcoming-shows .shows-desc .shows-name p {
       margin-bottom: 0;
-      color: #ffffff; }
+      color: #707070; }
   .single-upcoming-shows .shows-location {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
@@ -867,7 +879,7 @@ img {
         text-align: center; } }
     .single-upcoming-shows .shows-location p {
       margin-bottom: 0;
-      color: #ffffff; }
+      color: #707070; }
   .single-upcoming-shows .shows-time {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 10%;
@@ -885,7 +897,7 @@ img {
         text-align: center; } }
     .single-upcoming-shows .shows-time p {
       margin-bottom: 0;
-      color: #ffffff; }
+      color: #707070; }
   .single-upcoming-shows .buy-tickets {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
@@ -901,7 +913,7 @@ img {
         width: 100%; } }
     .single-upcoming-shows .buy-tickets p {
       margin-bottom: 0;
-      color: #ffffff; }
+      color: #707070; }
     .single-upcoming-shows .buy-tickets a {
       display: block; }
       .single-upcoming-shows .buy-tickets a:hover, .single-upcoming-shows .buy-tickets a:focus {
@@ -929,6 +941,7 @@ img {
       .single-featured-shows .featured-shows-content .shows-text h4 {
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
+        color: #72728c;
         font-weight: 900;
         margin-bottom: 0;
         line-height: 1; }
@@ -980,9 +993,9 @@ img {
         left: 0; } }
     .featured-shows-slides .owl-prev:hover,
     .featured-shows-slides .owl-next:hover {
-      background: #cc1573;
-      background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-      background: linear-gradient(to right, #cc1573, #5722a9);
+      background: #707070;
+      background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+      background: linear-gradient(to right, #707070, #0f0f0f);
       color: #ffffff; }
   .featured-shows-slides .owl-next {
     left: auto;
@@ -1002,9 +1015,9 @@ img {
   z-index: 1;
   margin: 200px 7% 250px 7%;
   padding: 60px 30px;
-  background: #cc1573;
-  background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-  background: linear-gradient(to right, #cc1573, #5722a9);
+  background: #707070;
+  background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+  background: linear-gradient(to right, #707070, #0f0f0f);
   opacity: 0.8; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .search-your-shows-content {
@@ -1047,7 +1060,7 @@ img {
         width: 110px;
         padding: 0 15px;
         font-size: 12px; } }
-  .search-your-shows-content .search-form .musica-btn {
+  .search-your-shows-content .search-form .tsn-btn {
     height: 50px; }
 
 /* :: 11.0 Music Player Area CSS */
@@ -1349,11 +1362,11 @@ img {
           z-index: 1; }
 
 /* :: 13.0 Music Artists Area CSS */
-.musica-music-artists-area {
+.tsn-music-artists-area {
   position: relative;
   z-index: 1;
   background-color: #ffffff; }
-  .musica-music-artists-area .music-search {
+  .tsn-music-artists-area .music-search {
     position: relative;
     z-index: 1;
     -webkit-box-flex: 0;
@@ -1364,7 +1377,7 @@ img {
     margin-right: 5px;
     height: 430px; }
     @media only screen and (max-width: 767px) {
-      .musica-music-artists-area .music-search {
+      .tsn-music-artists-area .music-search {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -1373,7 +1386,7 @@ img {
         margin-right: 0;
         margin-bottom: 10px;
         height: 350px; } }
-    .musica-music-artists-area .music-search .music-search-content {
+    .tsn-music-artists-area .music-search .music-search-content {
       position: absolute;
       text-align: center;
       top: 50%;
@@ -1381,27 +1394,27 @@ img {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 10; }
-      .musica-music-artists-area .music-search .music-search-content h2 {
+      .tsn-music-artists-area .music-search .music-search-content h2 {
         color: #ffffff;
         font-size: 60px;
         font-weight: 900; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .musica-music-artists-area .music-search .music-search-content h2 {
+          .tsn-music-artists-area .music-search .music-search-content h2 {
             font-size: 48px; } }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .musica-music-artists-area .music-search .music-search-content h2 {
+          .tsn-music-artists-area .music-search .music-search-content h2 {
             font-size: 42px; } }
         @media only screen and (max-width: 767px) {
-          .musica-music-artists-area .music-search .music-search-content h2 {
+          .tsn-music-artists-area .music-search .music-search-content h2 {
             font-size: 30px; } }
-      .musica-music-artists-area .music-search .music-search-content h4 {
+      .tsn-music-artists-area .music-search .music-search-content h4 {
         font-weight: 600;
         color: #ffffff;
         margin-bottom: 0; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .musica-music-artists-area .music-search .music-search-content h4 {
+          .tsn-music-artists-area .music-search .music-search-content h4 {
             font-size: 18px; } }
-  .musica-music-artists-area .artists-search {
+  .tsn-music-artists-area .artists-search {
     position: relative;
     z-index: 1;
     -webkit-box-flex: 0;
@@ -1412,7 +1425,7 @@ img {
     margin-left: 5px;
     height: 430px; }
     @media only screen and (max-width: 767px) {
-      .musica-music-artists-area .artists-search {
+      .tsn-music-artists-area .artists-search {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -1420,7 +1433,7 @@ img {
         width: 100%;
         margin-left: 0;
         height: 350px; } }
-    .musica-music-artists-area .artists-search .music-search-content {
+    .tsn-music-artists-area .artists-search .music-search-content {
       position: absolute;
       text-align: center;
       top: 50%;
@@ -1428,25 +1441,25 @@ img {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 10; }
-      .musica-music-artists-area .artists-search .music-search-content h2 {
+      .tsn-music-artists-area .artists-search .music-search-content h2 {
         color: #ffffff;
         font-size: 60px;
         font-weight: 900; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .musica-music-artists-area .artists-search .music-search-content h2 {
+          .tsn-music-artists-area .artists-search .music-search-content h2 {
             font-size: 48px; } }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .musica-music-artists-area .artists-search .music-search-content h2 {
+          .tsn-music-artists-area .artists-search .music-search-content h2 {
             font-size: 42px; } }
         @media only screen and (max-width: 767px) {
-          .musica-music-artists-area .artists-search .music-search-content h2 {
+          .tsn-music-artists-area .artists-search .music-search-content h2 {
             font-size: 30px; } }
-      .musica-music-artists-area .artists-search .music-search-content h4 {
+      .tsn-music-artists-area .artists-search .music-search-content h4 {
         font-weight: 600;
         color: #ffffff;
         margin-bottom: 0; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .musica-music-artists-area .artists-search .music-search-content h4 {
+          .tsn-music-artists-area .artists-search .music-search-content h4 {
             font-size: 18px; } }
 
 /* :: 14.0 Services Area CSS */
@@ -1454,9 +1467,9 @@ img {
   position: relative;
   margin-bottom: 30px; }
   .single-service-area .course-title span {
-    background: #cc1573;
-    background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-    background: linear-gradient(to right, #cc1573, #5722a9);
+    background: #707070;
+    background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+    background: linear-gradient(to right, #707070, #0f0f0f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 72px;
@@ -1533,9 +1546,9 @@ img {
     .footer-area .footer-widget-area .subscribe-form button {
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms;
-      background: #cc1573;
-      background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-      background: linear-gradient(to right, #cc1573, #5722a9);
+      background: #707070;
+      background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+      background: linear-gradient(to right, #707070, #0f0f0f);
       position: absolute;
       z-index: 10;
       top: 0;
@@ -1592,9 +1605,9 @@ img {
     left: 50%;
     margin-left: -196px;
     z-index: 100;
-    background: #cc1573;
-    background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-    background: linear-gradient(to right, #cc1573, #5722a9);
+    background: #707070;
+    background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+    background: linear-gradient(to right, #707070, #0f0f0f);
     text-align: center; }
     @media only screen and (max-width: 767px) {
       .breadcumb-area .bradcumbContent {
@@ -1702,7 +1715,7 @@ img {
   .single-blog-post .read-more-btn:hover, .single-blog-post .read-more-btn:focus {
     color: #707070; }
 
-.musica-pagination-area .pagination .page-item .page-link {
+.tsn-pagination-area .pagination .page-item .page-link {
   background-color: transparent;
   display: block;
   padding: 0;
@@ -1711,16 +1724,16 @@ img {
   color: #6a6a6a;
   font-size: 16px;
   font-weight: 700; }
-  .musica-pagination-area .pagination .page-item .page-link:hover, .musica-pagination-area .pagination .page-item .page-link:focus {
+  .tsn-pagination-area .pagination .page-item .page-link:hover, .tsn-pagination-area .pagination .page-item .page-link:focus {
     color: #707070; }
-.musica-pagination-area .pagination .page-item:first-child .page-link {
+.tsn-pagination-area .pagination .page-item:first-child .page-link {
   margin-left: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
-.musica-pagination-area .pagination .page-item:last-child .page-link {
+.tsn-pagination-area .pagination .page-item:last-child .page-link {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
-.musica-pagination-area .pagination .page-item.active .page-link {
+.tsn-pagination-area .pagination .page-item.active .page-link {
   color: #ffffff; }
 
 .map-area {
@@ -1860,9 +1873,9 @@ img {
 .single-accordion h6 {
   margin-bottom: 0; }
   .single-accordion h6 a {
-    background: #cc1573;
-    background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-    background: linear-gradient(to right, #cc1573, #5722a9);
+    background: #707070;
+    background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+    background: linear-gradient(to right, #707070, #0f0f0f);
     border-radius: 0;
     color: #ffffff;
     display: block;
@@ -1892,9 +1905,9 @@ img {
       background: #f3f3f3;
       color: #6a6a6a; }
       .single-accordion h6 a.collapsed span {
-        background: #cc1573;
-        background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-        background: linear-gradient(to right, #cc1573, #5722a9); }
+        background: #707070;
+        background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+        background: linear-gradient(to right, #707070, #0f0f0f); }
         .single-accordion h6 a.collapsed span.accor-close {
           opacity: 0; }
         .single-accordion h6 a.collapsed span.accor-open {
@@ -1907,13 +1920,13 @@ img {
     margin-bottom: 0; }
 
 /* :: 21.3.0 Tabs Area CSS */
-.musica-tabs-content {
+.tsn-tabs-content {
   position: relative;
   z-index: 1; }
-  .musica-tabs-content .nav-tabs {
+  .tsn-tabs-content .nav-tabs {
     border-bottom: none;
     margin-bottom: 15px; }
-    .musica-tabs-content .nav-tabs .nav-link {
+    .tsn-tabs-content .nav-tabs .nav-link {
       background-color: #f3f3f3;
       padding: 0 20px;
       height: 58px;
@@ -1923,26 +1936,26 @@ img {
       border: none;
       border-radius: 0; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .musica-tabs-content .nav-tabs .nav-link {
+        .tsn-tabs-content .nav-tabs .nav-link {
           padding: 0 15px; } }
       @media only screen and (max-width: 767px) {
-        .musica-tabs-content .nav-tabs .nav-link {
+        .tsn-tabs-content .nav-tabs .nav-link {
           padding: 0 15px;
           font-size: 12px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .musica-tabs-content .nav-tabs .nav-link {
+        .tsn-tabs-content .nav-tabs .nav-link {
           padding: 0 15px; } }
-      .musica-tabs-content .nav-tabs .nav-link.active {
-        background: #cc1573;
-        background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-        background: linear-gradient(to right, #cc1573, #5722a9);
+      .tsn-tabs-content .nav-tabs .nav-link.active {
+        background: #707070;
+        background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+        background: linear-gradient(to right, #707070, #0f0f0f);
         color: #ffffff; }
-  .musica-tabs-content .musica-tab-text p span {
+  .tsn-tabs-content .tsn-tab-text p span {
     font-size: 36px;
     font-weight: 700;
     margin-right: 15px;
     color: #707070; }
-  .musica-tabs-content .tab-content h6 {
+  .tsn-tabs-content .tab-content h6 {
     font-size: 18px; }
 
 /* :: 22.0 Footer Area CSS */

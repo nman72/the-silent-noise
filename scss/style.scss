@@ -16,7 +16,7 @@
     :: 3.5.0 Preloader
     :: 3.6.0 Miscellaneous
     :: 3.7.0 ScrollUp
-    :: 3.8.0 Musica Button
+    :: 3.8.0 tsn Button
 :: 4.0 Header Area CSS
 :: 5.0 Hero Slides Area
 :: 6.0 About Us CSS
@@ -377,9 +377,9 @@ img {
     @include trans-duration(500ms);
 }
 
-/* :: 3.8.0 Musica Button */
+/* :: 3.8.0 tsn Button */
 
-.musica-btn {
+.tsn-btn {
     @include bg-gradients;
     @include trans-duration(500ms);
     position: relative;
@@ -417,20 +417,20 @@ img {
         padding: 0 15px;
         width: 133px;
         height: 42px;
-        border-left: 3px solid #cc1573;
-        border-right: 3px solid #5722a9;
+        border-left: 3px solid #707070;
+        border-right: 3px solid #0f0f0f;
         background-position: 0 0, 0 100%;
         background-repeat: no-repeat;
         background-size: 100% 3px;
-        background-image: -webkit-linear-gradient(left, #cc1573 0%, #5722a9 100%), -webkit-linear-gradient(left, #cc1573 0%, #5722a9 100%);
-        background-image: linear-gradient(to right, #cc1573 0%, #5722a9 100%), linear-gradient(to right, #cc1573 0%, #5722a9 100%);
+        background-image: -webkit-linear-gradient(left, #707070 0%, #0f0f0f 100%), -webkit-linear-gradient(left, #707070 0%, #0f0f0f 100%);
+        background-image: linear-gradient(to right, #707070 0%, #0f0f0f 100%), linear-gradient(to right, #707070 0%, #0f0f0f 100%);
         &::after {
             @include trans-duration(750ms);
             color: $white-color;
-            background: #cc1573;
-            background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-            background: -webkit-linear-gradient(left, #cc1573, #5722a9);
-            background: linear-gradient(to right, #cc1573, #5722a9);
+            background: #707070;
+            background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+            background: -webkit-linear-gradient(left, #707070, #0f0f0f);
+            background: linear-gradient(to right, #707070, #0f0f0f);
             content: '';
             position: absolute;
             width: 100%;
@@ -463,7 +463,7 @@ img {
     top: 30px;
     left: 0;
     z-index: 1000;
-    .musica-main-menu {
+    .tsn-main-menu {
         position: relative;
         width: 100%;
         height: 85px;
@@ -544,7 +544,7 @@ img {
         }
     }
     .is-sticky {
-        .musica-main-menu {
+        .tsn-main-menu {
             position: fixed;
             width: 100%;
             height: 85px;
@@ -1180,7 +1180,7 @@ img {
                 font-size: 12px;
             }
         }
-        .musica-btn {
+        .tsn-btn {
             height: 50px;
         }
     }
@@ -1521,7 +1521,7 @@ img {
 
 /* :: 13.0 Music Artists Area CSS */
 
-.musica-music-artists-area {
+.tsn-music-artists-area {
     position: relative;
     z-index: 1;
     background-color: $bg-default;
@@ -1627,9 +1627,9 @@ img {
         position: relative;
         margin-bottom: 30px;
         span {
-            background: #cc1573;
-            background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-            background: linear-gradient(to right, #cc1573, #5722a9);
+            background: #707070;
+            background: -webkit-linear-gradient(to right, #707070, #0f0f0f);
+            background: linear-gradient(to right, #707070, #0f0f0f);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 72px;
@@ -1934,7 +1934,7 @@ img {
     }
 }
 
-.musica-pagination-area {
+.tsn-pagination-area {
     .pagination {
         .page-item {
             .page-link {
@@ -2191,7 +2191,7 @@ img {
 
 /* :: 21.3.0 Tabs Area CSS */
 
-.musica-tabs-content {
+.tsn-tabs-content {
     position: relative;
     z-index: 1;
     .nav-tabs {
@@ -2222,7 +2222,7 @@ img {
             }
         }
     }
-    .musica-tab-text {
+    .tsn-tab-text {
         p span {
             font-size: 36px;
             font-weight: 700;

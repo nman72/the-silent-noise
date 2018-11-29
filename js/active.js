@@ -12,7 +12,7 @@
 
     // :: 2.0 Nav Active Code
     if ($.fn.classyNav) {
-        $('#musicaNav').classyNav();
+        $('#tsnNav').classyNav();
     }
 
     // :: 3.0 Sliders Active Code
@@ -147,7 +147,7 @@
 
     // :: 6.0 Sticky Active Code
     if ($.fn.sticky) {
-        $(".musica-main-menu").sticky({
+        $(".tsn-main-menu").sticky({
             topSpacing: 0
         });
     }
