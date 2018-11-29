@@ -29,7 +29,7 @@
 :: 13.0 Music Artists Area CSS
 :: 14.0 Services Area CSS
 :: 15.0 Footer Area CSS
-:: 16.0 Breadcumb Area CSS
+:: 16.0 breadcrumb Area CSS
 :: 17.0 CTA Area CSS
 :: 18.0 Blog Area CSS
 :: 19.0 Skills Area CSS
@@ -1769,9 +1769,9 @@ img {
     }
 }
 
-/* :: 16.0 Breadcumb Area CSS */
+/* :: 16.0 breadcrumb Area CSS */
 
-.breadcumb-area {
+.breadcrumb-area {
     position: relative;
     z-index: 10;
     width: 100%;
@@ -1785,7 +1785,7 @@ img {
     @media #{$breakpoint-xs} {
         height: 220px;
     }
-    .bradcumbContent {
+    .breadcrumbContent {
         position: absolute;
         width: 392px;
         height: 78px;

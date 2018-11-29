@@ -23,7 +23,7 @@
 :: 13.0 Music Artists Area CSS
 :: 14.0 Services Area CSS
 :: 15.0 Footer Area CSS
-:: 16.0 Breadcumb Area CSS
+:: 16.0 breadcrumb Area CSS
 :: 17.0 CTA Area CSS
 :: 18.0 Blog Area CSS
 :: 19.0 Skills Area CSS
@@ -405,11 +405,11 @@ img {
   position: absolute;
   z-index: 100;
   width: 100%;
-  top: 30px;
+  top: 0px;
   left: 0;
   z-index: 1000; }
   .header-area .tsn-main-menu {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 85px;
     background-color: #ffffff;
@@ -491,7 +491,6 @@ img {
     position: fixed;
     width: 100%;
     height: 85px;
-    top: 0;
     left: 0;
     z-index: 9999;
     background-color: #ffffff;
@@ -1582,22 +1581,22 @@ img {
       -ms-flex-order: 30;
       order: 30; } }
 
-/* :: 16.0 Breadcumb Area CSS */
-.breadcumb-area {
+/* :: 16.0 breadcrumb Area CSS */
+.breadcrumb-area {
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 345px; }
+  height: 500px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .breadcumb-area {
+    .breadcrumb-area {
       height: 270px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .breadcumb-area {
+    .breadcrumb-area {
       height: 250px; } }
   @media only screen and (max-width: 767px) {
-    .breadcumb-area {
+    .breadcrumb-area {
       height: 220px; } }
-  .breadcumb-area .bradcumbContent {
+  .breadcrumb-area .breadcrumbContent {
     position: absolute;
     width: 392px;
     height: 78px;
@@ -1610,20 +1609,20 @@ img {
     background: linear-gradient(to right, #707070, #0f0f0f);
     text-align: center; }
     @media only screen and (max-width: 767px) {
-      .breadcumb-area .bradcumbContent {
+      .breadcrumb-area .breadcrumbContent {
         width: 280px;
         margin-left: -140px; } }
-    .breadcumb-area .bradcumbContent h2 {
+    .breadcrumb-area .breadcrumbContent h2 {
       font-size: 36px;
       color: #ffffff;
       margin-bottom: 0;
       line-height: 78px;
       font-weight: 900; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .breadcumb-area .bradcumbContent h2 {
+        .breadcrumb-area .breadcrumbContent h2 {
           font-size: 30px; } }
       @media only screen and (max-width: 767px) {
-        .breadcumb-area .bradcumbContent h2 {
+        .breadcrumb-area .breadcrumbContent h2 {
           font-size: 26px; } }
 
 /* :: 17.0 CTA Area CSS */
