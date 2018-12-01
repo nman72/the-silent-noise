@@ -94,7 +94,22 @@ b:focus {
   color: #707070;
   font-weight: 600;
   font-size: 34px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif; 
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        b,
+        b:hover,
+        b:focus {
+            font-size: 26px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        b,
+        b:hover,
+        b:focus {
+            font-size: 22px; } }
+    @media only screen and (max-width: 767px) {
+        b,
+        b:hover,
+        b:focus {
+            font-size: 20px; } }}
 
 c,
 c:hover,
@@ -106,7 +121,22 @@ c:focus {
   color: #707070;
   font-weight: 600;
   font-size: 24px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif; 
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        c,
+        c:hover,
+        c:focus {
+            font-size: 20px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        c,
+        c:hover,
+        c:focus {
+            font-size: 16px; } }
+    @media only screen and (max-width: 767px) {
+        c,
+        c:hover,
+        c:focus {
+            font-size: 14px; } }}
 
 ul,
 ol {
@@ -616,48 +646,64 @@ img {
     display: inline-block; }
     .single-hero-slide .hero-slides-content h2 {
       position: absolute;
-      z-index: 1;
+      text-align: left;
       font-size: 30px;
       color: #ffffff;
-      margin-left: 45px;
+      margin-left: 50px;
       margin-top: -350px;
       margin-bottom: 0;
       font-weight: 600;
-      text-shadow: 18px 0 0 rgba(255, 45, 109, 0.2);
-      display: inline-block; }
+      text-shadow: 18px 0 0 rgba(255, 45, 109, 0.2); }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-hero-slide .hero-slides-content h2 {
-          font-size: 130px;} }
+          font-size: 25px;
+          margin-top: -200px;
+          margin-left: 33px;} }
       @media only screen and (max-width: 767px) {
         .single-hero-slide .hero-slides-content h2 {
-          font-size: 60px;} }
+          font-size: 20px;
+          margin-top: -200px;
+          margin-left: 18px;} }
       .single-hero-slide .hero-slides-content h2 span {
         position: absolute;
         top: 0;
         left: -18px;
-        font-size: 40px;
+        font-size: 30px;
         color: rgba(132, 57, 255, 0.2);
+        margin-left: 50px;
         margin-bottom: 0;
+        margin-top: -350px;
         font-weight: 600;
         text-shadow: none;
         z-index: -5; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .single-hero-slide .hero-slides-content h2 span {
-            font-size: 130px; } }
+            font-size: 25px;
+            margin-top: -200px;
+            margin-left: 33px;} }
         @media only screen and (max-width: 767px) {
           .single-hero-slide .hero-slides-content h2 span {
-            font-size: 60px;} }
+            font-size: 20px;
+            margin-top: -200px;
+            margin-left: 18px;} }
     .single-hero-slide .hero-slides-content p {
+      position: absolute;
       text-align: left;
       font-size: 12px;
-      margin-left: 45px;
-      margin-top: -300px;
+      margin-left: 50px;
+      margin-top: -280px;
       color: #ffffff;
       font-family: "Roboto", sans-serif; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-slide .hero-slides-content p {
+          font-size: 12px;
+          margin-top: -130px;
+          margin-left: 33px;} }
       @media only screen and (max-width: 767px) {
         .single-hero-slide .hero-slides-content p {
-          font-size: 30px;
-          margin-top: 10px;} }
+          font-size: 12px;
+          margin-top: -130px;
+          margin-left: 18px;} }
 
 .hero-slides .owl-item.active .single-hero-slide .slide-img {
   -webkit-animation: slide 15s linear infinite;
@@ -1589,13 +1635,13 @@ img {
   height: 500px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .breadcrumb-area {
-      height: 270px; } }
+      height: 370px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .breadcrumb-area {
-      height: 250px; } }
+      height: 350px; } }
   @media only screen and (max-width: 767px) {
     .breadcrumb-area {
-      height: 220px; } }
+      height: 320px; } }
   .breadcrumb-area .breadcrumbContent {
     position: absolute;
     width: 392px;
