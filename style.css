@@ -18,7 +18,7 @@
 :: 8.0 Upcoming Shows Area CSS
 :: 9.0 Featured Shows Area CSS
 :: 10.0 Search Your Shows Area CSS
-:: 11.0 Music Player Area CSS
+:: 11.0 Songs Area CSS
 :: 12.0 Featured Album Area CSS
 :: 13.0 Music Artists Area CSS
 :: 14.0 Services Area CSS
@@ -1108,71 +1108,92 @@ img {
   .search-your-shows-content .search-form .tsn-btn {
     height: 50px; }
 
-/* :: 11.0 Music Player Area CSS */
-.music-player-area {
+/* :: 11.0 Songs Area CSS */
+.single-song-area {
   position: relative;
-  z-index: 1;
-  padding-left: 5%;
-  padding-right: 5%; }
-  @media only screen and (max-width: 767px) {
-    .music-player-area {
-      padding-left: 0;
-      padding-right: 0; } }
-
-.single-music-player {
-  position: relative;
-  z-index: 1;
-  overflow: hidden; }
-  .single-music-player img {
-    -webkit-transition-duration: 1000ms;
-    transition-duration: 1000ms; }
-  .single-music-player .music-info {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.74);
-    z-index: 10;
-    padding: 30px; }
+  z-index: 1; }
+  .single-song-area .song-thumbnail {
+    position: relative;
+    z-index: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 135px;
+    flex: 0 0 135px;
+    max-width: 135px;
+    width: 135px;
+    margin-right: 50px; }
+    .single-song-area .song-thumbnail img {
+      width: 100%; }
     @media only screen and (max-width: 767px) {
-      .single-music-player .music-info {
-        padding: 15px; } }
-    .single-music-player .music-info h5 {
-      font-size: 18px;
-      color: #ffffff; }
-    .single-music-player .music-info p {
-      color: #ffffff;
-      margin-bottom: 0;
-      line-height: 1; }
-  .single-music-player .music-play-icon .audioplayer {
+      .single-song-area .song-thumbnail {
+        margin-right: 0;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%; } }
+  .single-song-area .song-play-area {
+    position: relative;
+    z-index: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 185px);
+    flex: 0 0 calc(100% - 185px);
+    max-width: calc(100% - 185px);
+    width: calc(100% - 185px);
+    background-color: #262626;
+    padding: 15px 30px 20px; }
+    @media only screen and (max-width: 767px) {
+      .single-song-area .song-play-area {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%; } }
+    .single-song-area .song-play-area .song-name p {
+      color: #b8b8b8;
+      margin-bottom: 5px; }
+    .single-song-area .song-play-area .audioplayer {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      border: none;
+      border-radius: 0;
+      background: transparent; }
+    .single-song-area .song-play-area .audioplayer-playing .audioplayer-playpause,
+    .single-song-area .song-play-area .audioplayer:not(.audioplayer-playing) .audioplayer-playpause:hover,
+    .single-song-area .song-play-area .audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+      background: #fff; }
+    .single-song-area .song-play-area .audioplayer-time {
+      font-size: 14px;
+      color: #fff; }
+
+.song-play-area {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #262626;
+  padding: 15px 30px 20px;
+  border: 1px solid #363636; }
+  .song-play-area .song-name p {
+    color: #b8b8b8;
+    margin-bottom: 5px; }
+  .song-play-area .audioplayer {
     margin: 0;
     padding: 0;
-    width: auto;
+    width: 100%;
     height: auto;
+    align-items: center;
     border: none;
     border-radius: 0;
     background: transparent; }
-    .single-music-player .music-play-icon .audioplayer .audioplayer-playpause {
-      background-color: #ffffff; }
-    .single-music-player .music-play-icon .audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
-      border-top: 10px solid transparent;
-      border-right: none;
-      border-bottom: 10px solid transparent;
-      border-left: 18px solid #000; }
-    .single-music-player .music-play-icon .audioplayer .audioplayer-playing .audioplayer-playpause a::before,
-    .single-music-player .music-play-icon .audioplayer .audioplayer-playing .audioplayer-playpause a::after {
-      background-color: #707070; }
-    .single-music-player .music-play-icon .audioplayer .audioplayer-bar,
-    .single-music-player .music-play-icon .audioplayer .audioplayer-time,
-    .single-music-player .music-play-icon .audioplayer .audioplayer-volume {
-      display: none !important; }
-  .single-music-player:hover .music-info, .single-music-player:focus .music-info {
-    background-color: #707070; }
-  .single-music-player:hover img, .single-music-player:focus img {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
+  .song-play-area .audioplayer-playing .audioplayer-playpause,
+  .song-play-area .audioplayer:not(.audioplayer-playing) .audioplayer-playpause:hover,
+  .song-play-area .audioplayer:not(.audioplayer-playing) .audioplayer-playpause {
+    background: #fff; }
+  .song-play-area .audioplayer-time {
+    font-size: 14px;
+    color: #fff; }
 
 /* :: 12.0 Featured Album Area CSS */
 .featured-album-area {
