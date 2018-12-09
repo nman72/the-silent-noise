@@ -12,18 +12,30 @@
     <title>The Silent Noise</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.min.css">
 
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_3OUrIXeqLn6TotaVPBxwH");
+       })();
+    </script>
+    <script type="text/javascript">
+        function draft() {
+            emailjs.sendForm('default_service', 'template_5j3G0pA0', 'myForm');
+        }
+    </script>
 </head>
 
 <body>
     <!-- ##### Preloader ##### -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="circle-preloader">
-            <img src="img/core-img/compact-disc.png" alt="">
+            <img src="compact-disc.png" alt="">
         </div>
     </div>
 
@@ -37,7 +49,7 @@
                     <nav class="classy-navbar justify-content-between" id="tsnNav">
 
                         <!-- Nav brand -->
-                        <b href="index.html">THE SILENT NOISE</b>
+                        <a href="index.html" style="font-size: 34px; color: #707070; font-weight: 600">THE SILENT NOISE</a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -65,7 +77,7 @@
                                 </ul>
                                 <!-- Cart Button -->
                                 <div class="cart-btn">
-                                    <a href="login.html"><p><span class="icon-bell"></span> <span class="quantity">1</span></p></a>
+                                    <a href="login.html"><p><span class="icon-bell"></span></p></a>
                                 </div>
 
                             </div>
@@ -93,21 +105,29 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
+                    <div class="section-heading section-padding-40">
+                        <h6 style="color: #707070;">Sign up below to receive email notifications on The Silent Noise latest tour dates, blogs, live streams, videos, and more.</h6>
+                    </div>
                     <div class="login-content">
-                        <h3>Welcome Back</h3>
                         <!-- Login Form -->
                         <div class="login-form">
-                            <form action="#" method="post">
+                            <!--<form action="email.php" method="post">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail">
+                                    <label>Email address</label>
+                                    <input type="hidden" name="subjects" placeholder="The Silent Noise"/>
+                                    <input type="email" name="email" placeholder="Your email">
                                     <small id="emailHelp" class="form-text text-muted"><i class="fa fa-lock mr-2"></i>We'll never share your email with anyone else.</small>
+                                    <textarea name="message" style="display:none" placeholder="Congratulations!  You have successfully signed up to receive the latest news from your favorite band, The Silent Noise."></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
-                                <button type="submit" class="btn oneMusic-btn mt-30">Login</button>
+                                <button type="submit" name="submit" class="btn tsn-btn mt-30">Sign Up</button>
+                            </form>-->
+                            <form id="myform" onSubmit="draft(); return false;" method="post">
+                                <label>Email Address</label>
+                                <br>
+                                <input type="text" name="to_name" placeholder="Your email" />
+                                <br><br>
+                                <button type="submit" class="btn tsn-btn mt-30">Sign Up</button>
+                                
                             </form>
                         </div>
                     </div>
@@ -117,11 +137,16 @@
     </section>
     <!-- ##### Login Area End ##### -->
 
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0">
+        <div class="container-fluid">
+            <div class="row">
+                
     <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="footer-widget-area mb-100">
-                        <c href="index.html">THE SILENT NOISE</c>
-                        <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <a href="references.html" style="font-size: 24px; color: #707070; font-weight: 600">References</a>
+                        <p class="copywrite-text"><a href="#"></a><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
@@ -151,6 +176,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script type="text/javascript">
+        function draft() {
+            emailjs.sendForm('gmail', 'template_5j3G0pA0', '#myform').then(function(response) {
+               window.open ('http://www.cs634-altsimmons-03.designaspractice.com/login_success.html','_self',false);
+            }, function(error) {
+               window.open ('http://www.cs634-altsimmons-03.designaspractice.com/login_fail.html','_self',false);
+            });
+        }
+    </script>
 </body>
 
 </html>
